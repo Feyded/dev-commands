@@ -15,5 +15,8 @@ git branch -D branch_name
 # Delete a Remote Branch
 git push origin --delete branch_name
 
+# Create a new branch and switch to it
+git checkout -b branch_name
+git switch -c branch_name
 
 ```
