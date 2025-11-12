@@ -19,4 +19,13 @@ git push origin --delete branch_name
 git checkout -b branch_name
 git switch -c branch_name
 
+# Working changes are now saved in the stash
+git stash
+
+# Deletes the most recent stash
+git stash drop
+
+# Clear all stashes
+git stash clear
+
 ```
