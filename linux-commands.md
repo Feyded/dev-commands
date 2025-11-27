@@ -10,6 +10,9 @@ A simple reference for commonly used Linux commands.
 # create a new folder
 mkdir myFolder
 
+# create a nested folder
+mkdir -p myFolder/nestedFolder
+
 # create a new file
 touch myFile.txt
 
