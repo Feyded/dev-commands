@@ -60,4 +60,7 @@ git clean -n
 git clean -f # remove all untracked files
 git clean -f test.html # remove specific untracked files
 
+# View the origin commit tree in a graphical format
+git log --oneline --graph --all
+
 ```
