@@ -28,4 +28,16 @@ git stash drop
 # Clear all stashes
 git stash clear
 
+# Add all files to staging area
+git add . 
+
+# Add specific file to staging area
+git add src/App.tsx 
+
+# Remove all files from staging area
+git restore --staged .
+
+# Commit changes with a message
+git commit -m "Add new feature"
+
 ```
