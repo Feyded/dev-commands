@@ -50,4 +50,11 @@ git reset --hard HEAD~1
 # Set your branch to latest updated commit only use when do (git reset --hard/soft)
 git reset --soft ORIG_HEAD
 
+# Check untracked files to remove before deleting them
+git clean -n
+
+# Check untracked files to remove before deleting them
+git clean -f # remove all untracked files
+git clean -f test.html # remove specific untracked files
+
 ```
