@@ -40,4 +40,14 @@ git restore --staged .
 # Commit changes with a message
 git commit -m "Add new feature"
 
+# Bring back the files again to staging area if locally commit
+# When using in push origin go back 1 commit behind in origin while the files commits are in staging
+git reset --soft HEAD~1
+
+# When using in push origin go back 1 commit behind in origin the files will not be in staging
+git reset --hard HEAD~1
+
+# Set your branch to latest updated commit only use when do (git reset --hard/soft)
+git reset --soft ORIG_HEAD
+
 ```
