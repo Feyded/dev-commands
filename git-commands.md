@@ -31,6 +31,9 @@ git stash clear
 # Add all files to staging area
 git add . 
 
+# Undo all files changes
+git restore . 
+
 # Add specific file to staging area
 git add src/App.tsx 
 
