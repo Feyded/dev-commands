@@ -30,8 +30,14 @@ docker compose up --build -w
 # Start services defined in docker-compose.yml and attach to the current workspace
 docker compose up -w
 
+# Start or update containers
+ docker compose up -d
+
+# view logs
+docker compose logs -f
+
 # List all running Docker containers
-docker ps
+docker compose ps
 
 # Start an interactive bash session inside a running container
 docker exec -it container_name /bin/bash
