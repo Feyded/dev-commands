@@ -31,13 +31,31 @@ docker compose up --build -w
 docker compose up -w
 
 # Start or update containers
- docker compose up -d
+docker compose up -d
 
-# view logs
+# View logs
 docker compose logs -f
 
-# List all running Docker containers
-docker compose ps
+# Shows only running containers
+docker ps -a
+
+# Shows all containers, including stopped ones
+docker ps
+
+# List all images
+docker images ls
+
+# Stop the specific container
+docker stop container_name
+
+# Removing the container (info) Only works if the container is stopped.
+docker rm washmate-api
+
+# Remove a specific image (info) remove first the container
+docker rmi docker_image
+
+# Remove all unused images
+docker image prune
 
 # Start an interactive bash session inside a running container
 docker exec -it container_name /bin/bash
