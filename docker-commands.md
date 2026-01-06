@@ -36,10 +36,10 @@ docker compose up -d
 # View logs
 docker compose logs -f
 
-# Shows only running containers
+# Shows all containers, including stopped ones
 docker ps -a
 
-# Shows all containers, including stopped ones
+# Shows only running containers 
 docker ps
 
 # List all images
