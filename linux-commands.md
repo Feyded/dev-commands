@@ -25,4 +25,7 @@ ls -la
 # display the content of the file
 cat sample.txt
 
+# rename file
+mv oldfilename.txt newfilename.txt
+
 ```
