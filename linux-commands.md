@@ -22,4 +22,7 @@ nano myFile.txt
 # list files in the folder
 ls -la
 
+# display the content of the file
+cat sample.txt
+
 ```
