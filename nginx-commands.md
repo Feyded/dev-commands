@@ -24,5 +24,9 @@ sudo systemctl reload nginx
 # copying from local to server
 scp -i ~/.ssh/<filename> -r dist/. root@<server_ip>:/var/www/<folder_name>/dist/
 
+# Create symlinks for sites enabled
+sudo ln -s /etc/nginx/sites-available/<your_website> /etc/nginx/sites-enabled/
+
+
 
 ```
