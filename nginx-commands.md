@@ -10,7 +10,6 @@ sudo nginx -t
 # reload without restarting server
 sudo systemctl reload nginx
 
-
 # FILES FOR CONFIGURATION (cd)
 # main config
 /etc/nginx/nginx.conf
@@ -27,6 +26,13 @@ scp -i ~/.ssh/<filename> -r dist/. root@<server_ip>:/var/www/<folder_name>/dist/
 # Create symlinks for sites enabled
 sudo ln -s /etc/nginx/sites-available/<your_website> /etc/nginx/sites-enabled/
 
+# Check expiration of ssl
+sudo certbot certificates
 
+# Renew SSL
+sudo certbot renew
+
+# Test renewal without changing anything
+sudo certbot renew --dry-run
 
 ```
