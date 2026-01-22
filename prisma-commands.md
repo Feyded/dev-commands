@@ -4,7 +4,7 @@ A simple reference for commonly used Git commands.
 
 ---
 
-## Git Commands
+## Prisma Commands
 
 ```bash
 # Install prisma
