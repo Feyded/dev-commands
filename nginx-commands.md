@@ -26,6 +26,9 @@ scp -i ~/.ssh/<filename> -r dist/. root@<server_ip>:/var/www/<folder_name>/dist/
 # Create symlinks for sites enabled
 sudo ln -s /etc/nginx/sites-available/<your_website> /etc/nginx/sites-enabled/
 
+# Create Symlink using hostinger 
+ln -s ../storage/app/public public/storage
+
 # Check expiration of ssl
 sudo certbot certificates
 
