@@ -29,13 +29,13 @@ git stash drop
 git stash clear
 
 # Add all files to staging area
-git add . 
+git add .
 
 # Undo all files changes
-git restore . 
+git restore .
 
 # Add specific file to staging area
-git add src/App.tsx 
+git add src/App.tsx
 
 # Remove all files from staging area
 git restore --staged .
@@ -55,6 +55,12 @@ git reset --soft ORIG_HEAD
 
 # Check untracked files to remove before deleting them
 git clean -n
+
+# Revert the latest commit
+git revert HEAD
+
+# Revert specific commit
+git revert {commit_id}
 
 # Check untracked files to remove before deleting them
 git clean -f # remove all untracked files
